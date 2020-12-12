@@ -1,10 +1,8 @@
-
+#import debugpy
+#debugpy.listen(('192.168.1.8',5678))
+#print('waiting...')
+#debugpy.wait_for_client()
 
 x = 0
-
-while x < 20:
-	print('Yahhh !!!',x)
-	x += 1
-
-print('End of cycle !!!')
 print('Yahhh !!!')
+input('press')
