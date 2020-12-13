@@ -5,4 +5,6 @@
 
 x = 0
 print('Yahhh !!!')
-input('press')
+input('press 1')
+input('press 2')
+input('press 3')
