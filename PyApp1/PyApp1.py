@@ -1,7 +1,8 @@
-#import debugpy
+import debugpy
 #debugpy.listen(('192.168.1.8',5678))
 #print('waiting...')
 #debugpy.wait_for_client()
+
 
 import pydevd_file_utils
 import time, os
@@ -31,6 +32,7 @@ def getbyte():
     return 0
 
 
+debugpy.log_to('/usr/src/PyApp1/PyApp1/')
 getbyte()
 
 print('start: '+ __name__)
