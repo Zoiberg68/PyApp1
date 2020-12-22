@@ -34,6 +34,7 @@ getbyte()
 
 print('start: '+ __name__)
 print('file:'+ __file__)
+print(pydevd_file_utils.__file__)
 
 if __name__ == '__main__':
     create_threads()
