@@ -3,8 +3,42 @@
 #print('waiting...')
 #debugpy.wait_for_client()
 
-x = 0
-print('Yahhh !!!')
-input('press 1')
-input('press 2')
-input('press 3')
+import time, os
+import random
+from threading import Thread
+
+class Thrd(Thread):
+    def __init__(self, name):
+        Thread.__init__(self)
+        self.name = name
+
+    def run(self):
+        amount = random.randint(3,15)
+        time.sleep(amount)
+        msg = '%s is running' % self.name
+        print(msg)
+
+def create_threads():
+        for i in range(5):
+            name = 'Thread #%s' % (i+1)
+            my_thread = Thrd(name)
+            my_thread.start()
+
+port='com4'
+def getbyte():
+    print('getbyte func')
+    return 0
+
+
+getbyte()
+
+print('start: '+ __name__)
+
+if __name__ == '__main__':
+    create_threads()
+
+print('THe end')
+
+
+
+
