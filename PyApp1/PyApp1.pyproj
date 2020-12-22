@@ -7,7 +7,7 @@
     <StartupFile>PyApp1.py</StartupFile>
     <SearchPath>
     </SearchPath>
-    <WorkingDirectory>/usr/src/PyApp1/PyApp1</WorkingDirectory>
+    <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>PyApp1</Name>
     <RootNamespace>PyApp1</RootNamespace>
